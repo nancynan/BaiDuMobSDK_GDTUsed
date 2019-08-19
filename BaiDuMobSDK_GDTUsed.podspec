@@ -91,7 +91,7 @@ Pod::Spec.new do |spec|
   spec.source_files  = "Frameworks/BaiduMobAdSDK.framework/Headers/*.h"
   #spec.exclude_files = "Classes/Exclude"
 
-  spec.public_header_files = "Frameworks/BaiduMobAdSDK.framework/Headers/*.h"
+  spec.public_header_files = "BaiduMobAdSDK.framework/Headers/*.h"
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
