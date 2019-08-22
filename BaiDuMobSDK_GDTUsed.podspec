@@ -28,7 +28,7 @@ Pod::Spec.new do |spec|
                      优量汇mediation中使用的百度网盟SDK
                      DESC
 
-   spec.homepage     = "https://e.qq.com/dev/index.html"
+  spec.homepage     = "www.baidu.com"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -90,9 +90,9 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.public_header_files = "Frameworks/BaiduMobAdSDK.framework/Headers/*.h"
-  spec.source_files  = "Frameworks/BaiduMobAdSDK.framework/Headers/*.h"
-  #spec.exclude_files = "Classes/Exclude"
+  # spec.public_header_files = "Frameworks/BaiduMobAdSDK.framework/Headers/*.h"
+  # spec.source_files  = "Classes", "Classes/**/*.{h,m}"
+  #  spec.exclude_files = "Classes/Exclude"
 
   
 
@@ -117,21 +117,24 @@ Pod::Spec.new do |spec|
   #
 
   # spec.framework  = "SomeFramework"
-   spec.frameworks = "UIKit"
-
-  # spec.library   = "iconv"
+   spec.frameworks = "UIKit","StoreKit","SafariServices","AVFoundation", "AdSupport", "CoreTelephony","CoreLocation", "SystemConfiguration", "CoreMotion", "CoreMedia","MessageUI","Foundation"
+   spec.weak_frameworks = "WebKit"
+   spec.library   = "c++.tbd"
   # spec.libraries = "iconv", "xml2"
+   spec.vendored_frameworks = "Frameworks/BaiduMobAdSDK.framework"
 
-
+  # spec.resource  = "Frameworks/baidumobadsdk.bundle"
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  If your library depends on compiler flags you can set them in the xcconfig hash
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # spec.requires_arc = true
+   spec.requires_arc = true
+
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
+  #  spec.pod_target_xcconfig = { 'VALID_ARCHS[sdk=iphonesimulator*]' => '' }
 
 end
