@@ -119,7 +119,7 @@ Pod::Spec.new do |spec|
   # spec.framework  = "SomeFramework"
    spec.frameworks = "UIKit","StoreKit","SafariServices","AVFoundation", "AdSupport", "CoreTelephony","CoreLocation", "SystemConfiguration", "CoreMotion", "CoreMedia","MessageUI","Foundation"
    spec.weak_frameworks = "WebKit"
-   spec.library   = "c++.tbd"
+   spec.library   = "c++"
   # spec.libraries = "iconv", "xml2"
    spec.vendored_frameworks = "Frameworks/BaiduMobAdSDK.framework"
 
