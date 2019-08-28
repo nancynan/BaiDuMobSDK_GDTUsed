@@ -78,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/nancynan/BaiDuMobSDK_GDTUsed.git" }
+  spec.source       = { :git => "https://github.com/nancynan/BaiDuMobSDK_GDTUsed.git", :tag => "4.65" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
